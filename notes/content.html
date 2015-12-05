@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ilkin&#39;s webpage</title>
+    <link rel="stylesheet" type="text/css" href="css/Notes5.css">
+</head>
+
+<body>
+ <h1 class="title">&#34;Introduction to Programming Nanodegree&#34; Notes</h1>
+
+
+  <div id="link1">
+    <h2> ***Web &#38; HTML for Beginners </h2>
+    <div>
+      <div id="link1.1" class="subtitle"> Definitions </div>
+      <b> Internet </b> is the global system of interconnected computer networks.
+      <br>The<b> web</b> is the system we use to access the Internet.
+      <br> <b> HTML </b> stands for <em><b>Hyper Text Markup Language </b></em>  which is the main document type of the web, invented in 1990s.
+      <br> <b> Web browser </b> is a program (Internet Explorer , FireFox, Google Chrome, etc) that is located on the computer that is used to display files on the web.
+      <br> <b> Server </b> is a computer designed to process requests and deliver data to other computers over a local network or the Internet.
+      <br> <b> HTTP </b> stands for <em><b>Hyper Text Transfer Protocol </b></em>  which is the set of rules for transferring files (text, images, sound, video, and other multimedia files) on the World Wide Web.
+    </div>
+    <div>
+      <div id="link1.2" class="subtitle"> How the Web Works? </div>
+      When a user opens a web browser and writes www.udacity.com, the computer sends an HTTP request to a server. The server finds the HTML document and sends it back to the user's computer , the web browser interprets the page and displays it on the user's screen. Click this <a href=" https://www.udacity.com/course/viewer/#!/c-nd000/l-3873828673/e-48329854/m-48480496"> video</a> to watch the detailed explanation.
+    </div>
+    <div>
+      <div id="link1.3" class="subtitle"> HTML </div>
+      HTML has &#34;Text content&#34; (what you see), &#34;markup&#34; (what it looks), &#34;references to other documents&#34; (images, videos, etc), &#34;links to other pages&#34;.
+      <br>HTML consists of a series of codes typed into a text-file by the programmer;
+      <ul>
+        <li>
+        <b>TAGs</b> - use <b> &#60; angle-brackets &#62;</b>,most tags have opening and closing tag, but some called &#34;void&#34; tag which does not require a closing tag.
+        </li>
+        <li>
+        <b>Element</b> - includes <b>opening tag</b> &#38; <b>content</b> &#38; <b>closing tag</b>. Elements can be <b>inline</b> or <b>block</b>; Block elements create an &#34;invisible box&#34; around the content inside of them, such as &#34;p&#34;, &#34;div&#34;, &#34;form&#34;. &#34;a&#34;, &#34;span&#34;, &#34;br&#34;, &#34;img&#34; and &#34;strong&#34; are all inline elements.
+    	  </li>
+        <li>
+        <b>Attribute</b> - provide additional information about an element , are specified in the opening tag.
+        </li>
+      </ul>
+      The Structure of HTML document :
+          <pre>         &#60;html&#62;
+              &#60;head&#62;
+                 &#60;title&#62; TITLE &#60;&#47;title&#62;
+              &#60;&#47;head&#62;
+              &#60;body&#62;
+                 &#60;name&#62; CONTENT &#60;&#47;name&#62;
+              &#60;&#47;body&#62;
+          &#60;&#47;html&#62;
+          </pre>
+    </div>
+  </div>
+  <a href="menu.html#linkm"><b>back to menu</b></a>
+
+  <div id="link2">
+    <h2>***HTML &#38; CSS &#38; DOM </h2>
+    <div>
+      <div id="link2.1" class="subtitle"> WebPage ingredients </div>
+      The browser turns HTML &#34;tags&#34; into &#34;elements&#34; that form a &#34;tree&#34;. It knows how to do that because of the <b>DOM</b> &#34;<b>Document Object Model</b>&#34;, which is a standard convention for representing and interacting with elements in HTML. Each HTML tag creates an element in the DOM that the browser uses to display the page.
+      <br>  The document written in HTML defines the <u><b>structure</b></u> and <u><b>content</b></u> of the page.To define the <u><b>style</b></u>, you have to use another language; <b>CSS</b> &#34;<b>Cascading Style Sheets</b>&#34;. CSS is used for describing the look and formatting of a document written in a markup language.
+      <br> DOM -a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages). The nodes of every document are organized in a tree structure, called the DOM tree.
+    </div>
+    <div>
+      <div id="link2.2" class="subtitle"> Text Editors for coding </div>
+      <ul>
+        <li>  <b>ScratchPad</b> : beginner friendly, least powerful, sharing is not possible, HTML &#38; CSS </li>
+        <li>  <b>Codepen</b> : powerful, easy for sharing but account needed, HTML &#38; CSS &#38; JavaScript </li>
+        <li>  <b>Sublime</b> : most powerful,but not quite friendly, difficult to share, all languages</li>
+      </ul>
+    </div>
+    <div>
+      <div id="link2.3" class="subtitle"> Avoiding Repetition </div>
+      Coding principle is <em> don&#39;t repeat yourself (<b>DRY</b>)</em>. Avoiding Repetition makes it easier to create &#38; maintain &#38; expand, less likely for errors and mistakes. Also, it makes it faster loading of web pages, enables the clients to save money on bandwidth and development costs.
+    </div>
+  </div>
+  <a href="menu.html#linkm"><b>back to menu</b></a>
+
+  <div id="link3">
+    <h2>***Python for Beginners </h2>
+    <div>
+      <div id="link3.1" class="subtitle"> Introduction to Programming </div>
+      A <b> computer </b> is a machine that can execute a program. With the right program, a computer can do any mechanical computation you can imagine.
+      <br>A <b>program</b> describes a very precise sequence of steps. Since the computer is just a machine, the program must give the steps in a way that can be executed mechanically. That is, the program can be followed without any thought.
+      <br>A <b>programming language</b> is a language designed for producing computer programs. A good programming language makes it easy for humans to read and write programs that can be executed by a computer. Programmin languages are needed because natural languages are ambiguous and verbose.
+      <br> <b>Python</b> is a programming language. The programs that we write in the Python language will be the input to the <b>Python interpreter</b>, which is a program that runs on the computer. The Python interpreter reads our programs and executes them by following the rules of the Python language.
+      <br> <b>Grammatical structure</b> is very strict, has to match the rules exactly, otherwise interpreter wouldn’t understand it, and gives error.
+      <br> <b>Python expressions</b>:
+          <pre>
+          Expression    &#8594; Expression Operator Expression
+          Expression    &#8594; Number
+          Operator      + - * /
+          Number        0, 1, ...
+          </pre>
+      <p>Python problem solving starts with "not panicking". Understanding inputs, outputs &#38; relationships, and creating examples are the basics of it. Starting to write as “pseudocode”, not exactly detailed correct code, helps to start solving. </p>
+      <br>The trick to dealing with programming mistakes (called "bugs") is not to avoid making them entirely. That's impossible. The trick is to develop a system for finding and fixing them. These strategies help for debugging:
+      <ol>
+        <li> Examine error messages when programs crash (last line)</li>
+        <li> Work from example code</li>
+        <li> Make sure examples work</li>
+        <li> Check (print) intermediate results</li>
+        <li> Keep and compare old versions</li>
+      </ol>
+    </div>
+    <div>
+      <div id="link3.2" class="subtitle"> Variables &#38; Strings &#38; Lists </div>
+      <b>Variables</b> give programmers a way to give names to values. Variables can be useful to programmers in many ways&#58;
+      <ul>
+        <li> They improve code readability by using names that make sense to humans</li>
+        <li> They give us a way to store the value of important data</li>
+        <li> They give us a way to change the value</li>
+      </ul>
+      The way to introduce a variable is using an assignment statement. We have a name,followed by an equal symbol, followed by an expression:
+      <br> Name = Expression
+      <br>A <b>string</b> is just a sequence of characters surrounded by quotes. ‘ or “ can be used, but they have to be same at the beginning and end. Examples :
+          <pre>
+          print 4                 >>> output : 4
+          print "4"               >>> output : 4
+          print 4 + 4             >>> output : 8
+          print "4" + "4"         >>> output : 44   note: 4 is a number, “4” is a string
+          print "hello’           >>> gives error because of the quotes types
+          </pre>
+      One of the things we can do with strings that we can't do with numbers, is we can extract subsequences from the strings.If we have a string, we can use the square brackets to extract parts of that string.Indexing a string starts from 0-1-2-3 etc., we can also use negative indexing. Examples:
+          <pre>
+          ilkin[2]                >>> output : k
+          ilkin[-2]               >>> output : i
+          ilkin[2:3]              >>> output : k
+          ilkin[2:4]              >>> output : ki
+          ilkin[2:]               >>> output : kin
+          </pre>
+      In addition to using single quotes (') or double quotes (") to create a string, you can also use TRIPLE quotes to create a multi-line string.
+      <br>A <b>List</b> is a more powerful and general type of structured data.  Compared to a string where all of the elements must be characters, in a list the elements can be anything you want such as characters, strings, numbers or even other lists.
+          <pre>
+          String                  List
+          s = 'yabba!'            p = ['y','a','b','b','a','!']
+          s[2:4] -> 'bb'          p[2:4] -> ['b','b']
+          </pre>
+    </div>
+    <div>
+      <div id="link3.3" class="subtitle"> Input&#8594;Function&#8594;Output </div>
+      <b>Functions</b> (procedure) take inputs, and produce outputs. Function blocks begin with the keyword <b>def</b> followed by the function name and parentheses ( ( ) ). Any input parameters (arguments or operands) should be placed within these parentheses. You can also define parameters inside these parentheses. Every function starts with a colon (:) and is indented.
+      <br>Functions help programmers avoid repetition by re-using the same definition.
+      <br>The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.
+      <br>Examples:
+          <pre>
+          def square(n):
+            return n * n
+          print square (5)       >>> output : 25
+          def abbaize(a,b):
+            return a + b + b + a
+          print abbaize('a','b') >>> output : abba
+          def abbaize(a,b):
+            c = a + b + b + a
+          print abbaize('a','b') >>> output : None
+          </pre>
+    </div>
+    <div>
+      <div id="link3.4" class="subtitle"> Control Flow &#38; Loops &#38; Operators</div>
+      Python provides lots of different operators for comparisons, such as greater than (&#62;), less than (&#60;), equal to (==) and not equal to (!=). The output of a comparison is not a number, it is a <b>Boolean</b> value (<b>True</b> or <b>False</b>).
+      <br>‘==’ for equality comparison, ‘=’ for assignment
+          <pre>
+          i = 21  assingns  21 value to i
+          i==21   returns True or False
+          </pre>
+      <b>If</b> statement helps to make decision; "if" followed by a comparison (test expression), followed by a colon. And then, inside the "if", there is the block, the block is the code that will run when the test expression is True.
+      <br>If the test expression doesn't evaluate to True, the block doesn't execute. Example :
+          <pre>
+          def bigger(a,b):
+            if a>b:
+              r=a
+            else:
+              r=b
+            return r
+          print bigger(2,9)      >>> output:9
+          </pre>
+      <b>OR</b> operator displays True if either of the expression True. Only False OR False give False.
+      <br><b>While</b> loop is similar to If statement, "While" is followed by a test expression, followed by a colon, and then a "block" has a sequence of instructions. If executes only 1 time, While executes until test expression is False. Example :
+          <pre>
+          def print_numbers (n):
+            i = 1
+            while i &#60; n:
+              print i
+              i = i + 1
+            return i
+          </pre>
+      The <b>append</b> method adds a new element to the end of a list. The append method mutates the list that it is invoked on, it does not create a new list. The syntax for the append method is:
+          <pre>
+          &#60;list&#62;.append(&#60;element&#62;)
+          </pre>
+      The <b> + (concatenation) </b> operator can be used with lists and is very similar to how it is used to concatenate strings. It produces a new list, it does not mutate either of the input lists.
+          <pre>
+          &#60;list&#62; + &#60;list&#62; → &#60;list&#62;
+          </pre>
+      The <b>len (length) </b> operator can be used to find out the length of an object. The len operator works for many things other than lists, it works for any object that is a collection of things including strings. The output from len is the number of elements in its input.
+          <pre>
+          len(&#60;list&#62;) → &#60;number&#62;
+          </pre>
+      Example:
+          <pre>
+          p = &#91;1,2&#93;
+          q = &#91;3,4&#93;
+          p.append&#40;q&#41;
+          p = p + &#91;4,5&#93;
+          len(p)                 >>> output: 5
+          </pre>
+      In Python, there is a more convenient way to loop through the elements of a list: <b>for loop</b>. The loop goes through each element of the list in turn, assigning that element to the &#60;name&#62; and evaluating the &#60;block&#62;. Using the for loop helps to use less code than while loop.
+          <pre>
+          for &#60;name&#62; in &#60;list&#62;:
+          &#60;block&#62;
+          </pre>
+      Example:
+          <pre>
+          def find_element(p,t):
+              i=0
+              for e in p:
+                if e==t:
+                  return i
+                i=i+1
+                return -1
+          </pre>
+    </div>
+  </div>
+  <a href="menu.html#linkm"><b>back to menu</b></a>
+
+  <div id="link4">
+    <h2>***Python &#45; Object Oriented Programming &#40;OOP&#41;</h2>
+    <div>
+      <div id="link4.1" class="subtitle"> Introduction to OOP </div>
+      <b>Object Oriented Programming &#40;OOP&#41;</b> is a programming language model, organized around <b>OBJECTs</b> rather than &#34;actions&#34; and <b>DATA</b> rather than &#34;logic&#34;. Historically, a program has been viewed as a logical procedure that takes input data, processes it, and produces output data.
+      <br>The first step in OOP is to identify all the objects the programmer wants to manipulate and how they relate to each other, an exercise often known as <b>data modeling</b>. Once an object has been identified,  it is generalized as a class of objects which defines the kind of data it contains and any logic sequences that can manipulate it. Each distinct logic sequence is known as a method. Objects communicate with well-defined interfaces called messages.
+      <p>The concepts and rules used in Object Oriented Programming provide these important benefits&#58;
+      <ul>
+        <li> The concept of a data class makes it possible to define sub&#45;classes of data objects that share some or all of the main class characteristics. Called inheritance, this property of OOP forces a more thorough data analysis, reduces development time, and ensures more accurate coding.</li>
+        <li> Since a class defines only the data it needs to be concerned with, when an instance of that class &#40;an object&#41; is run, the code will not be able to accidentally access other program data. This characteristic of data hiding provides greater system security and avoids unintended data corruption.</li>
+        <li> The definition of a class is reuseable not only by the program for which it is initially created but also by other Object Oriented Programs &#40;and, for this reason, can be more easily distributed for use in networks&#41;.</li>
+        <li> The concept of data classes allows a programmer to create any new data type that is not already defined in the language itself.</li>
+      </ul>
+      <p>Python provides at least three different ways to <b>import</b> modules. You can use the import statement, the from statement, or the builtin __import__ function&#58;
+      <ol>
+        <li> <em>import X</em>
+          <br>imports the module X, and creates a reference to that module in the current namespace. Or in other words, after you&#39;ve run this statement, you can use <b>X.name</b> to refer to things defined in module X.</li>
+        <li> <em>from X import &#42; </em>
+          <br>imports the module X, and creates references in the current namespace to all public objects defined by that module &#40;that is, everything that doesn&#39;t have a name starting with &#34;&#95;&#34;&#41;. Or in other words, after you&#39;ve run this statement, you can simply use a plain name to refer to things defined in module X. But X itself is not defined, so X.name doesn&#39;t work. And if name was already defined, it is replaced by the new version. And if name in X is changed to point to some other object, your module won&#39;t notice.</li>
+        <li> <em>from X import a, b, c</em>
+          <br>imports the module X, and creates references in the current namespace to the given objects. Or in other words, you can now use a and b and c in your program.</li>
+        <li> <em>X &#61; &#95;&#95;import&#95;&#95;&#40;&#39;X&#39;&#41;</em>
+        <br>works like import X, with the difference that you pass the module name as a string, and explicitly assign it to a variable in your current namespace.</li>
+      </ol>
+      <p>OOP classes and CSS classes&#59; both of them represent general and specific &#34;definitions&#34;, HTML elements can use multiple classes just as objects can inherit from multiple super classes, and the more poorly thought out either is, the harder it is to scale and extend the current code base.
+      <br>CSS classes also use abstraction&#40;making things more general&#47;simpler&#47;abstract&#41; and encapsulation&#40;grouping together of information about an object&#41; within HTML. A class creates a re&#45;usable set of styles that can be applied anywhere in the HTML. Someone working in the html alone doesn&#39;t need to see all the details of the class. They just need to know that by adding class=&#34;frame&#34; to any HTML element, they get a consistent frame style applied.
+      <br>These make the complex easier to work with and maintain, reduce the duplications  and errors, make the code faster and re&#45;usable, make easier to improve the code.
+    </div>
+    <div>
+      <div id="link4.2" class="subtitle"> Terminology </div>
+        <div class="tab">
+        <p><u><div id="link4.a"> Abstraction </u>&#58;</div>
+          <div class="tab2"><p>The word &#34;abstraction&#34; in general refers to the process of dealing with things independently of their associations. In the world of programming, abstraction can come in many forms like data abstraction, code abstraction, control abstraction, etc.It reduces duplication of information in the code, makes the system more robust and tolerant to future changes.
+          </div>
+        <p><u>Attributes</u>&#58;
+          <div class="tab2"><p>Attributes are characteristics of an object. A special method called &#95;&#95;init&#95;&#95;&#40;&#41; is used to initialize the attributes of an object.
+          <br>Pre&#45;defined Class Attributes are &#34;&#95;&#95;dict&#95;&#95;&#34;, &#34;&#95;&#95;name&#95;&#95;&#34;, &#34;&#95;&#95;bases&#95;&#95;&#34;, &#34;&#95;&#95;doc&#95;&#95;&#34;, &#34;&#95;&#95;module&#95;&#95;&#34;.
+          <br>Pre&#45;defined Instance Attributes are &#34;&#95;&#95;dict&#95;&#95;&#34;, &#34;&#95;&#95;class&#95;&#95;&#34;
+          </div>
+        <p><u>Class</u>&#58;
+          <div class="tab2"><p>Simply a logical grouping of data and functions &#40;&#34;methods&#34; when defined within a class&#41;.  A class can contain any data , and can have any functions &#40;methods&#41; attached to it. Rather than just throwing random things together under the name &#34;class&#34;, classes are created where there is a logical connection between things.
+          <br>The class statement creates a new class definition. The name of the class immediately follows the keyword class followed by a colon.
+          </div>
+        <p><u>Class variable</u>&#58;
+          <div class="tab2"><p>A variable that is shared by all instances of a class. Class variables are defined within a class but outside any of the class&#39;s methods. Class variables are not used as frequently as instance variables are.
+          </div>
+        <p><u>Constructor</u>&#58;
+          <div class="tab2"><p>A constructor in a class is a special type of sub&#45;routine called to create an object. It prepares the new object for use, often accepting arguments that the constructor uses to set required member variables.
+          </div>
+        <p><u>Encapsulation</u>&#58;
+          <div class="tab2"><p>The terms encapsulation and abstraction are often used as synonyms. They are nearly synonymous, i.e. abstraction is achieved though encapsulation. Generally speaking, encapsulation is the mechanism for restricting the access to some of an object&#39;s components, this means that the internal representation of an object can&#39;t be seen from outside of the objects definition. Access to this data is typically only achieved through special methods&#58; Getters and Setters. By using solely get&#40;&#41; and set&#40;&#41; methods, we can make sure that the internal data cannot be accidentally set into an inconsistent or invalid state.
+          </div>
+        <p><u>Error handling</u>&#58;
+          <div class="tab2"><p>Python provides two very important features to handle any unexpected error in your Python programs and to add debugging capabilities in them&#58;
+          <ul>
+            <li>Exception Handling &#40;An exception is an event, which occurs during the execution of a program that disrupts the normal flow of the program&#39;s instructions. In general, when a Python script encounters a situation that it cannot cope with, it raises an exception. An exception is a Python object that represents an error.&#41;</li>
+            <li>Assertions &#40;An assertion is a sanity&#45;check that you can turn on or turn off when you are done with your testing of the program. An expression is tested, and if the result comes up false, an exception is raised.&#41;.</li>
+          </ul>
+          </div>
+        <p><u><div id="link4.i"> Inheritance </u>&#58;</div>
+          <div class="tab2"><p>While Object Oriented Programming is useful as a modeling tool, it truly gains power when the concept of inheritance is introduced. Inherticance is the process by which a &#34;child&#34; class derives the data and behavior of a &#34;parent&#34; class.
+          </div>
+        <p><u>Instance</u>&#58;
+          <div class="tab2"><p>An individual object of a certain class. An object obj that belongs to a class Circle, for example, is an instance of the class Circle.
+          </div>
+        <p><u>Instance variable</u>&#58;
+          <div class="tab2"><p>A variable that is defined inside a method and belongs only to the current instance of a class.
+          </div>
+        <p><u>Instantiation</u>&#58;
+          <div class="tab2"><p>The creation of an instance of a class.
+          </div>
+       <p><u>Library</u>&#58;
+          <div class="tab2"><p>In programming, abstractions can make or break productivity. That&#39;s why, commonly used functions are collected into <em>libraries</em> which can be re&#45;used by others. The programmers don't have to worry about the details, only need to understand how to use the ready&#45;made abstractions. Obviously, this makes the code easier, faster and more productive.
+          <br>Python has a large standard library, commonly cited as one of Python&#39;s greatest strengths, providing tools suited to many tasks. This is deliberate and has been described as a &#34;batteries included&#34; Python philosophy. Some of these can send email, or fetch web pages. One of them is called &#34;turtle&#34; that is part of the standard python installation. Turtle graphics is a popular simplest way for introducing programming. Another example would be &#34;os&#34;, provides a portable way of using operating system dependent functionality, such as os.name or os.path.
+          </div>
+        <p><u>Method</u>&#58;
+          <div class="tab2"><p>A special kind of function that is defined in a class definition. Methods &#40;or message&#41; are just like functions, with two differences&#58;
+          <ul>
+            <li>Methods are defined inside a class definition in order to make the relationship between the class and the method explicit.</li>
+            <li>The syntax for invoking a method is different from the syntax for calling a function.</li>
+          </ul>
+          </div>
+        <p><u>Object</u>&#58;
+          <div class="tab2"><p>A unique instance of a data structure that&#39;s defined by its class. An object comprises both data members &#40;class variables and instance variables&#41; and methods.
+          </div>
+        <p><u>Operator overloading</u>&#58;
+          <div class="tab2"><p>The assignment of more than one function to a particular operator.
+          </div>
+        <p><u>Polymorphism</u>&#58;
+          <div class="tab2"><p>The polymorphism is the process of using an operator or function in different ways for different data input. In practical terms, polymorphism means that if class B inherits from class A, it doesn&#39;t have to inherit everything about class A&#59; it can do some of the things that class A does differently.
+          </div>
+        </div>
+    </div>
+  </div>
+  <a href="menu.html#linkm"><b>back to menu</b></a>
+
+  <div id="link5">
+    <h2>***Networks &#38; Servers &#38; Forms &#38; DataBases &#38; MORE</h2>
+    A <b>Network</b> is a group of entities (computers, servers, mainframes, network devices, peripherals, etc) that can communicate, even though they are not all directly connected.
+    <br>Typical scenarios that are especially sensitive to <em>network speed</em> issues include:
+    <ul>
+      <li> time to establish a new connection</li>
+      <li> time to load a Web Page</li>
+      <li> time to download an app, operating system patch, or other files</li>
+      <li> ability to stream video content for long periods without glitches</li>
+    </ul>
+    Important <b>Network Performance</b> measures:
+    <div class="tab">
+      <p><u>Bandwidth</u>&#58;
+      <div class="tab2"><p>Amount of information that can be transmitted per unit time. It represents the overall capacity of the connection. Bandwidth is a key factor in determining the speed of a computer network. Virtually everyone knows the bandwidth ratings of their network routers and their Internet service. Commonly measured in bits/second.
+      </div>
+      <p><u>Latency</u>&#58;
+      <div class="tab2"><p>Time (delay) that takes message to get from source to destination, this is mainly a function of the signals travel time, and processing time at any nodes the information traverses.
+      </div>
+      <p><u>Throughput</u>&#58;
+      <div class="tab2"><p>Actual rate that information is transferred. It is controlled by available bandwidth, as well as the available signal-to-noise ratio and hardware limitations.
+      </div>
+      <p><u>Jitter</u>&#58;
+      <div class="tab2"><p>Variation in the time of arrival at the receiver of the information.
+      </div>
+      <p><u>Error Rate</u>&#58;
+      <div class="tab2"><p>Number of corrupted bits expressed as a percentage or fraction of the total sent.
+      <br>A bit is the basic unit of information in computing and digital communications. A bit can have only one of two values, these values are most commonly represented as either a 0 or 1. The two values can also be interpreted as logical values (true/false, yes/no), algebraic signs (+/−), activation states (on/off), or any other two-valued attribute.
+      </div>
+      <p>If Internet can be thought as serious of tubes, Latency is the length of the tube between 2 points, Bandwidth is how wide the tube is, the wider the tube, more data is sent, but still takes time to send, which is Latency. That is often confused.
+    </div>
+    <b>Operating a Network</b>:
+    <ul>
+      <li> encoding and interpretting messages : messages -> bits -> electrons/protons</li>
+      <li> routing messages : a message comes in with a destination, routes have to figure out the next destination </li>
+      <li> ruling &#38; deciding who gets to use resources </li>
+    </ul>
+    A <b>Protocol</b> is the special set of rules that end points in a telecommunication connection use when they communicate. Protocols specify interactions between the communicating entities; client &#40;web browser&#41; and server &#40;web server&#41;.The protocol, used on the web, is called HTTP&#40;Hyper Text Transfer Protocol&#41;, which is very simple; only two main messages: Request &#38; Response.
+    <br>URL&#40;Uniform Resource Locator&#41; is used to specify addresses on the World Wide Web, is the fundamental network identification for any resource connected to the web:
+    <br>protocol://domain:port/path?query_string#fragment_id
+    <br>example : http://example.com:80/toys?=foo#blah
+    <br>A <b>Cache</b> is a place to store something temporarily in a computing environment. The main purpose of a cache is to accelerate your computer while keeping the price of ­the computer low, it has some maximum size that is much smaller than the larger storage area. Caching allows you to do your computer tasks more rapidly.
+    <p>After client connects to the URL, it sends requests, asking the server to give responses:
+    <ul>
+      <li>Request : GET /foo HTTP/1.1 (METHOD /relativepath HTTP/version)
+      <br>Differences between GET and POST Methods :
+      <ul>
+        <li>GET include parameters in the URL and POST include the data in the request body.</li>
+        <li>GET is used for requesting, fetching documents, POST is used for sending data to the server.</li>
+        <li>GET parameters are generally okay to cache, POST parameters are almost never cached</li>
+        <li>GET requests should not change the Server, POST requests are okay to change the Server</li>
+      </ul>
+      <li>Response : HTTP/1.1 200 OK &#40;HTTP/version statuscode reasonphrase&#41;
+      <br>Status codes : 100 Continue, 101 Switching Protocols, 2xx Successful, 3xx Redirection, 4xx Client Error, 5xx Server Error</li>
+    </ul>
+    They both are followed by headers, such as Host, User Agent, Date, Content-Type, with a format of "Name: value".</p>
+    The purpose of a <b>server</b> is to respond to HTTP requests. There are 2 types of responses :
+    <ol>
+      <li>Static : Static content is published to regular files on your server and handled using the simplest methods available to the web server. Fastest, most efficient, simpliest way, but it must be republished when it changes.</li>
+      <li>Dynamic : Content is generated for you at the time you request the page. Good for pages change quickly, display viewer-specific. But it is resource-intensive, can display security problems, it cannot be used all pages. Most of the contents online are dynamic.</li>
+    </ol>
+    A <b>web application</b> lives on a web server, speaks HTTP, and generates content that your browser requests.
+    <br>A <b>HTML form</b> on a web page allows a user to enter data that is sent to a server for processing. Forms can resemble paper or database forms because web users fill out the forms using checkboxes, radio buttons, or text fields.
+    <br><b>Validation</b> basically means <em>verifying</em> on the Server side, so received data is what is expected to receive. This prevents the website from being hacked &#40;gaining unauthorized access&#41; and receiving junk data. All inputs should be treated as potentially dangerous, and validated to ensure that they contain the right information.
+    <br>Also, it&#39;s human nature to make mistakes, and this is where validation plays it's part in a user-friendly form. A simple visual reminder &#40;displaying error message&#41; to the user that something isn't filled in properly can make all the difference between the joy of a successfully filled out form and the intense frustration of having to guess what went wrong.
+    <br>A website asking user's birthday would be a good example, the server expects to see date format &#40;month, day, year&#41;, if junk data is received unintentionally or intentionally, that can create a security hole &#40;vulnerability&#41; which allows unauthorized users &#40;hackers&#41; to gain access to a system or network.
+    <br><b>String substitution</b> is used to avoid repetition. A function  substitutes 1 variable into a string, so we don't have to build that string over and over again.
+    <br><b>Escaping</b> in HTML is used to convert certain characters, such as HTML tags that can modify a website's appearance. Importing cgi in Python will apply the escape command where needed.
+    <br><b>Redirection</b> is used to allow sharing success link and reloading page. It directs user to a success page, allows to have distinct pages for forms and successes. Reloading the success page doesn't resubmit the form.
+    <br>Using <b>templates</b> is a very efficient way of avoiding time consuming code repetition. A <b>template library</b> is a library to build complicated strings of HTML, such as jinja2, Django, Quik, Genshi. Templates make the code cleaner, more organized, more readable, easier to modify, secure, allow to seperate different type of codes, and to use <a href="#link4.i">inheritance</a> &#38; <a href="#link4.a">abstraction</a> &#40;maintaining one base html file across all webpages to avoid repetition&#41;.
+    <br><b>Variable Substitution</b> in templates allows you to use variables to populate values in an HTML document using tags. Statement Syntax and Loop Syntax are methods for achieving this kind of substitution.
+    <br>Helpful tips:
+    <ul>
+      <li>always automatically escape variables when possible</li>
+      <li>minimize the code in templates</li>
+      <li>minimize html in code</li>
+    </ul>
+    <b>DataBase</b> is a program that stores and returns large amounts of structured data, or it can refer to the machine running that program, or it can refer to a system of machines running this program operating together. Types of databases include Relational &#40;postgreSQL, MySQL, SQLite, Oracle&#41;, Google App Engine Data Store &#40;Dynamo, NoSQL&#41; which uses objects instead of tables. Indexing help increase the speed of database reads, decreases the speed of database inserts and allow data to be sorted.
+    <br><b>Transactions</b> are basically just a group of statements.
+    <br><b>ACID</b> :
+    <ul>
+      <li><b>A</b>tomicity : all parts of a transaction succeed or fail together</li>
+      <li><b>C</b>onsistency : the database will always be consistent</li>
+      <li><b>I</b>solation : no transaction can interfere with another</li>
+      <li><b>D</b>urability : once the transaction is comitted, it won't be lost</li>
+    </ul>
+  </div>
+  <a href="menu.html#linkm"><b>back to menu</b></a>
+
+  <div id="link6">
+    <h2>***JavaScript &#40;JS&#41;</h2>
+    <div>
+      <div id="link6.1" class="subtitle"> Introduction to JavaScript</div>
+      The <b>JavaScript</b> programming language, developed by Netscape, Inc., is not part of the Java platform &#40;created by James Gosling of Sun Microsystems&#41;.Alongside HTML and CSS, it is one of the three essential technologies of World Wide Web content production; the majority of websites employ it and it is supported by all modern web browsers without plug-ins.
+      <p>JavaScript is a (VERY) distant cousin of Java in that it is also an OOP language. Many of their programming structures are similar. Key differences between Java and JavaScript:
+      <ul>
+        <li>Java is an OOP programming language while Java Script is an OOP scripting language.</li>
+        <li>Java creates applications that run in a virtual machine or browser while JavaScript code is run on a browser only.</li>
+        <li>Java code needs to be compiled while JavaScript code are all in text.</li>
+        <li>They require different plug-ins.</li>
+        <a target="_blank" href="http://javarevisited.blogspot.com/2015/03/10-difference-between-java-and-javascript-programming.html">Additional Info</a>
+      </ul></p>
+      <p>Too many things can be done with JavaScripts, simple to advanced programming examples: carousels, image galleries, fluctuating layouts, responses to button clicks, creating games, animated 2D and 3D graphics, full blown database-driven apps, and more!
+      <br>JavaScript itself is fairly compact but very flexible, and developers have written a lot of tools on top of the core JavaScript language, to unlock a huge amount of extra functionality with very little effort. These include:
+      <ul>
+        <li>Application Programming Interfaces (APIs) built into web browsers, providing various functionality like dynamically creating HTML and setting CSS styles, grabbing and manipulating a video stream from the user's webcam, or generating 3D graphics and audio samples.</li>
+        <li>Third-party APIs to allow developers to incorporate functionality in their sites from other properties, such as Twitter or Facebook.</li>
+        <li>Third-party frameworks and libraries you can apply to your HTML to allow you to rapidly build up sites and applications.</li>
+      </ul></p>
+      <p>There are two ways of adding JavaScript to a Page:
+      <ol>
+        <li>The Easy Way (Put JS directly into your HTML file): Add your JavaScript inside of a &#60;script&#62; tag (with a closing &#60;&#47;script&#62; too).</li>
+        <li>The Better Way (Write JS in a separate .js file): This is a better way to include JavaScript since it lets you keep your JavaScript separate from your HTML.</li>
+        <a target="_blank" href="http://www.w3schools.com/js/js_whereto.asp">Example</a>
+      </ol></p>
+      <p>JavaScript variables are containers for storing data values. Creating a variable in JavaScript is called &#34;declaring&#34; a variable, and syntax is:
+      <pre>
+        var variableName &#61; someValue&#59;</pre></p>
+      <p>In JavaScript, everything is an object, no &#34;classes&#34;. Put simply, this means that any variable can have properties which are other objects. There are two different syntaxes for accessing properties:
+      <pre>
+        myObj.property&#61;someValue
+        myObj&#91;&#34;property&#34;&#93;&#61;someValue
+      </pre>
+      <b>Dot-notation</b> is most commonly used in JS to access properties of objects, which means that the property name is given after a full stop character.Dot notation is faster to write and clearer to read.
+      <br><b>Square bracket</b> notation allows access to properties containing special characters and selection of properties using variables.
+      <br><a target="_blank" href="https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d#.ang87gwgb">Additional Info</a></p>
+      <p>Like Python, the datatype does not need to be declared. Another difference is that JS has more flexible interpretation of true&#47;false &#40;<b>truthy&#47;falsy</b>&#41;. This allows for many data standins rather than a strict '1'&#47;'0' for true&#47;false respectively. For example, non-zero numbers will evaluate to true as well as strings, objects, arrays, and functions that contain at least one non-zero character. On the falsy side, the empty string, undefined variables, null variables, and Nan &#40;Not a Number&#41; will evaluate to false. This is mirroed also in its equality clause, there being multiple forms of checking to see if two variables are equal, with '&#61;&#61;' measuring loose equality, and '&#61;&#61;&#61;' measuring strict equality.
+      <br><a target="_blank" href="https://blog.glyphobet.net/essay/2557">Additional Info</a></p>
+    </div>
+    <div>
+      <div id="link6.2" class="subtitle">jQuery</div>
+      <b>jQuery</b> is a lightweight, &#34;write less, do more&#34;, JavaScript library.
+      <br>The purpose of jQuery is to make it much easier to use JavaScript on your website.
+      <br>jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+      <br>jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation.
+      <br>The jQuery library contains the following features:
+      <ul>
+        <li>HTML/DOM manipulation</li>
+        <li>CSS manipulation</li>
+        <li>HTML event methods</li>
+        <li>Effects and animations</li>
+        <li>AJAX</li>
+        <li>Utilities</li>
+      </ul>
+      There are lots of other JavaScript frameworks out there, but jQuery seems to be the most popular, and also the most extendable.
+      <br>Many of the biggest companies on the Web use jQuery, such as:
+      <ul>
+        <li>Google</li>
+        <li>Microsoft</li>
+        <li>IBM</li>
+        <li>Netflix</li>
+      </ul>
+      <a target="_blank" href="http://www.w3schools.com/jquery/">Additional Info</a>
+    </div>
+    <div>
+      <div id="link6.3" class="subtitle">JSON</div>
+      <b>JSON</b> is short for JavaScript Object Notation, and is a way to store information in an organized, easy-to-access manner. In a nutshell, it gives us a human-readable collection of data that we can access in a really logical manner. It's so popular that most other programming languages have libraries capable of parsing and writing JSON &#40;like Python&#41;. Internet GET and POST requests frequently pass data in JSON format.
+      <br>With the rise of AJAX-powered sites, it’s becoming more and more important for sites to be able to load data <b>quickly</b> and <b>asynchronously</b>, or in the background without delaying page rendering. JSON allows us to overcome the cross-domain issue because we can use a method called <a target="_blank" href="http://remysharp.com/2007/10/08/what-is-jsonp/">JSONP</a> that uses a callback function to send the JSON data back to our domain. It’s this capability that makes JSON so incredibly useful, as it opens up a lot of doors that were previously difficult to work around.
+      <br>With a mix of nested curly braces, square brackets and commas, it's easy to make mistakes with JSON. And mistakes mean bugs. JSON linter like  <a target="_blank" href="http://jsonlint.com/">jsonlint.com</a> helps quickly and easily find syntax errors.
+      <br>JSON relies on object literal notation, useful for.
+      <br><a target="_blank" href="http://www.json.org/">Additional Info</a>
+    </div>
+  </div>
+  <a href="menu.html#linkm"><b>back to menu</b></a>
+
+  <div id="link7">
+    <h2>***Application Programming Interface &#40;API&#41;</h2>
+    <div>
+      <div id="link7.1" class="subtitle"> Introduction to APIs</div>
+      <b>Application Programming Interface &#40;API&#41;</b> is a set of routines, protocols, and tools for building software applications. An API expresses a software component in terms of its operations, inputs, outputs, and underlying types, defining functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising the interface. A good API makes it easier to develop a program by providing all the building blocks, which are then put together by the programmer.
+      <br>API designers these days tend to land on one of two formats for exchanging data between their servers and client developers - <b>XML</b> or <b>JSON</b>. Though a number of different formats for data have been designed and promoted over the years, XML's built in validation properties and JSON's agility have helped both formats emerge as leaders in the API space.
+      <br><a target="_blank" href="http://sproutsocial.com/insights/what-is-an-api/">Additional Info</a>
+    </div>
+    <div>
+      <div id="link7.2" class="subtitle">XML - Ideal for Highly Structured Information</div>
+      If you're familiar with <b>HTML</b>, you'll recognize <b>XML</b> - which is short for &#34;<b>Extensible Markup Language</b>&#34;. When combined with an <b>XML Schema Definition</b> &#40;<b>XSD</b>&#41;, which defines how an XML document must be structured, the data exchanged between two systems can be validated for consistency and completion on the fly, offloading that responsibility from the code that will process that data.
+      <br>Due in no small part to the popularity of HTML, XML emerged as a front runner to represent data exchanged via APIs early on. The SOAP and XML-RPC protocols both rely heavily on XML not only to provide the data in their responses, but also to accept the requests. SOAP in particular gained wide acceptance in critical transactional systems, such as those found in financial institutions and large enterprises, because of its strongly typed data and strictly enforced structure.
+      <br>But this extra validation does not come cheaply. Parsing an XML document and validating it against an XSD can take a fair amount of memory and computing power. The addition of tags and attributes lends extra weight to the data payload, which can significantly affect the performance of applications in constrained environments like mobile and embedded systems.
+      <br><a target="_blank" href="http://www.htmlgoodies.com/beyond/xml/article.php/3473531">Additional Info</a>
+    </div>
+    <div>
+      <div id="link7.3" class="subtitle">JSON - Lean and Mean</div>
+      <a href="#link6.3">Javascript Object Notation &#40;JSON&#41;</a>, emerged as a standard for easily exchanging Javscript object data between systems. Modern Javascript is designed to natively read that data and deserialize it into objects, making it available to the rest of the code running in the system. As computing power increased alongside improved network bandwidth, Javascript evolved into a mature and powerful language running entirely within the web browser. With Javascript as a client, many API producers began returning data in its native format, avoiding the need for black box XML code libraries and the bloat that often comes with them.
+      <br>JSON&#39;s simplicity has made it a favored data exchange format for several other agile languages as well, especially the Ruby community. JSON is  easier to parse than XML and its structure is much lighter.
+      <br>There are fewer characters to be passed on the wire, which can save gigabytes of transfer when applied to a high-traffic API.
+      <br>JSON&#39;s biggest weakness is its lack of defined data structures. Proponents of XML have created a series of data formats that can be used to easily exchange and validate data across disparate systems. The <a target="_blank" href="http://schema.org/">Schema.org</a> site, supported by several large companies including Google, Yahoo and Microsoft, acts as a repository for many of these definitions.
+      <br>JSON, however, only defines simple variables, arrays and hashes - arrays that use strings instead of numbers as the index - and little else. As a result, API producers have frequently developed their own JSON response formats in the absence of well-defined standards. In the last couple of years, some standards have begun to emerge such as HAL, Siren and JSON-LD - which recently gained acceptance as a <a target="_blank" href="http://www.w3.org/blog/news/archives/3589">W3C Recommendation</a>. But it will be some time before the dust settles and API producers change their responses to conform to these standards.
+    </div>
+    <div>
+      <div id="link7.4" class="subtitle">Which One is Right&#63;</div>
+      RESTful API&#39;s should be designed to be fast, reliable and easy to use. JSON is becoming the data exchange format of choice because it aligns so well with those goals. But, until standards shake out that allow developers to use more generalized clients to parse JSON data and provide strict type and format validation, XML will likely be the format of choice for API developers most concerned about providing a rigid data structure. We may well see the JSON standards shake out in the next year or two, which means XML may soon be consigned the same fate as floppy disks and punch cards.
+    </div>
+  </div>
+  <a href="menu.html#linkm"><b>back to menu</b></a>
+
+
+  <div id="linkcomments">
+    <h2>***COMMENTs</h2>
+    <div class="comments">
+      <div class="input">
+        <br>
+        <form method="post">
+          <div>
+            <label>
+            <b>Please Enter Your Name</b>
+            <br><textarea name="user" rows="1" cols="60"></textarea>
+            </label>
+          </div>
+          <div>
+            <label>
+            <b>Please Leave a Comment</b>
+            <br><textarea name="comment" rows="4" cols="60"></textarea>
+            </label>
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <hr>
+      <div class="output">
+        <b>Submitted Comments</b>
+        <hr>
+          {% if usercomments %}
+          {% for usercomment in usercomments %}
+            <div class="submitted">
+              <div class="submitted_user">
+                {% if usercomment.user %}
+                <strong> {{usercomment.user}} </strong> wrote:
+                {% else %}
+                <strong> Anonymous User </strong> wrote:
+                {% endif %}
+              </div>
+              <div class="submitted_comment">
+                <blockquote> {{usercomment.comment}} </blockquote>
+              </div>
+            </div>
+          {% endfor %}
+          {% else %}
+          <br>There are no comments.
+          {% endif %}
+      </div>
+    </div>
+  </div>
+  <a href="menu.html#linkm"><b>back to menu</b></a>
+
+</body>
+</html>
