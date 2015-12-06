@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>ilkin&#39;s webpage</title>
-    <link rel="stylesheet" type="text/css" href="css/Notes5.css">
+    <link rel="stylesheet" type="text/css" href="/css/Notes5.css">
 </head>
 
 <body>
@@ -539,24 +539,24 @@
       <div class="output">
         <b>Submitted Comments</b>
         <hr>
-          {% if usercomments %}
-          {% for usercomment in usercomments %}
-            <div class="submitted">
-              <div class="submitted_user">
-                {% if usercomment.user %}
-                <strong> {{usercomment.user}} </strong> wrote:
-                {% else %}
-                <strong> Anonymous User </strong> wrote:
-                {% endif %}
-              </div>
-              <div class="submitted_comment">
-                <blockquote> {{usercomment.comment}} </blockquote>
-              </div>
-            </div>
-          {% endfor %}
-          {% else %}
-          <br>There are no comments.
-          {% endif %}
+        {% if usercomments %}
+        {% for usercomment in usercomments %}
+        <div class="submitted">
+          <div class="submitted_user">
+            {% if usercomment.user %}
+            <strong> {{usercomment.user}} </strong> wrote:
+            {% else %}
+            <strong> Anonymous User </strong> wrote:
+            {% endif %}
+          </div>
+          <div class="submitted_comment">
+            <blockquote> {{usercomment.comment}} </blockquote>
+          </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <br>There are no comments.
+        {% endif %}
       </div>
     </div>
   </div>
