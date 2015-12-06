@@ -1,5 +1,8 @@
 Hi,
-i finally manage to make the links working, but now comments section is not working! 
+i finally manage to make the links working:
+http://pr5menu.appspot.com/ 
+
+but now comments section is not working! 
 if you click to Comments section at the buttom, you will see the mess under Submitted Comments :
 
 Submitted Comments
