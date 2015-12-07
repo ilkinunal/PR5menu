@@ -67,10 +67,5 @@ class CommentsHandler(Handler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-<<<<<<< HEAD
     ('/notes', CommentsHandler)
 ], debug=True)
-=======
-    ('/', CommentsHandler)
-], debug=True)
->>>>>>> origin/master
