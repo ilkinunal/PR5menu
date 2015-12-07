@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>ilkin&#39;s webpage</title>
-    <link rel="stylesheet" type="text/css" href="css/Notes5.css">
+    <link rel="stylesheet" type="text/css" href="/css/Notes5.css">
 </head>
 
 <body>
@@ -52,7 +52,7 @@
           </pre>
     </div>
   </div>
-  <a href="menu.html#linkm"><b>back to menu</b></a>
+  <a href="/#linkm"><b>back to menu</b></a>
 
   <div id="link2">
     <h2>***HTML &#38; CSS &#38; DOM </h2>
@@ -75,7 +75,7 @@
       Coding principle is <em> don&#39;t repeat yourself (<b>DRY</b>)</em>. Avoiding Repetition makes it easier to create &#38; maintain &#38; expand, less likely for errors and mistakes. Also, it makes it faster loading of web pages, enables the clients to save money on bandwidth and development costs.
     </div>
   </div>
-  <a href="menu.html#linkm"><b>back to menu</b></a>
+  <a href="/#linkm"><b>back to menu</b></a>
 
   <div id="link3">
     <h2>***Python for Beginners </h2>
@@ -221,7 +221,7 @@
           </pre>
     </div>
   </div>
-  <a href="menu.html#linkm"><b>back to menu</b></a>
+  <a href="/#linkm"><b>back to menu</b></a>
 
   <div id="link4">
     <h2>***Python &#45; Object Oriented Programming &#40;OOP&#41;</h2>
@@ -317,7 +317,7 @@
         </div>
     </div>
   </div>
-  <a href="menu.html#linkm"><b>back to menu</b></a>
+  <a href="/#linkm"><b>back to menu</b></a>
 
   <div id="link5">
     <h2>***Networks &#38; Servers &#38; Forms &#38; DataBases &#38; MORE</h2>
@@ -405,7 +405,7 @@
       <li><b>D</b>urability : once the transaction is comitted, it won't be lost</li>
     </ul>
   </div>
-  <a href="menu.html#linkm"><b>back to menu</b></a>
+  <a href="/#linkm"><b>back to menu</b></a>
 
   <div id="link6">
     <h2>***JavaScript &#40;JS&#41;</h2>
@@ -481,7 +481,7 @@
       <br><a target="_blank" href="http://www.json.org/">Additional Info</a>
     </div>
   </div>
-  <a href="menu.html#linkm"><b>back to menu</b></a>
+  <a href="/#linkm"><b>back to menu</b></a>
 
   <div id="link7">
     <h2>***Application Programming Interface &#40;API&#41;</h2>
@@ -511,7 +511,7 @@
       RESTful API&#39;s should be designed to be fast, reliable and easy to use. JSON is becoming the data exchange format of choice because it aligns so well with those goals. But, until standards shake out that allow developers to use more generalized clients to parse JSON data and provide strict type and format validation, XML will likely be the format of choice for API developers most concerned about providing a rigid data structure. We may well see the JSON standards shake out in the next year or two, which means XML may soon be consigned the same fate as floppy disks and punch cards.
     </div>
   </div>
-  <a href="menu.html#linkm"><b>back to menu</b></a>
+  <a href="/#linkm"><b>back to menu</b></a>
 
 
   <div id="linkcomments">
@@ -539,28 +539,28 @@
       <div class="output">
         <b>Submitted Comments</b>
         <hr>
-          {% if usercomments %}
-          {% for usercomment in usercomments %}
-            <div class="submitted">
-              <div class="submitted_user">
-                {% if usercomment.user %}
-                <strong> {{usercomment.user}} </strong> wrote:
-                {% else %}
-                <strong> Anonymous User </strong> wrote:
-                {% endif %}
-              </div>
-              <div class="submitted_comment">
-                <blockquote> {{usercomment.comment}} </blockquote>
-              </div>
-            </div>
-          {% endfor %}
-          {% else %}
-          <br>There are no comments.
-          {% endif %}
+        {% if usercomments %}
+        {% for usercomment in usercomments %}
+        <div class="submitted">
+          <div class="submitted_user">
+            {% if usercomment.user %}
+            <strong> {{usercomment.user}} </strong> wrote:
+            {% else %}
+            <strong> Anonymous User </strong> wrote:
+            {% endif %}
+          </div>
+          <div class="submitted_comment">
+            <blockquote> {{usercomment.comment}} </blockquote>
+          </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <br>There are no comments.
+        {% endif %}
       </div>
     </div>
   </div>
-  <a href="menu.html#linkm"><b>back to menu</b></a>
+  <a href="/#linkm"><b>back to menu</b></a>
 
 </body>
 </html>
